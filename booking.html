@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Book a Clean | Green GLO Cleaning Co | Eco Cleaning London</title>
-    <meta name="description" content="Book your eco-friendly clean online in minutes. Domestic, end of tenancy, deep & commercial cleaning across Greater London. BICSc accredited. From £18/hr.">
+    <meta name="description" content="Book your eco-friendly clean online. BICSc accredited, 5.0 Google rated. Domestic, end of tenancy, deep & commercial cleaning across Greater London. Quotation based.">
     <meta name="theme-color" content="#385538">
     <link rel="canonical" href="https://greenglocleaning.co.uk/booking.html">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Book a Clean | Green GLO Cleaning Co">
-    <meta property="og:description" content="Book your eco-friendly clean online. BICSc accredited, 5.0 Google rated, from £18/hr across Greater London.">
+    <meta property="og:description" content="Book your eco-friendly clean online. BICSc accredited, 5.0 Google rated. Quotation based across Greater London.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://greenglocleaning.co.uk/booking.html">
     <meta name="twitter:card" content="summary_large_image">
@@ -341,7 +341,7 @@
                     Book your <span class="text-mint-200">GreenGlo</span> clean.
                 </h1>
                 <p class="mt-5 text-base sm:text-lg text-sage-100/90 max-w-2xl mx-auto leading-relaxed">
-                    A simple 3-step booking form. Tell us about your space, your schedule, and any extras — we'll confirm your slot fast.
+                    A simple 3-step booking form. Tell us about your space, your schedule, and any extras — we'll confirm your slot fast with a tailored quotation.
                 </p>
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
                     <a href="#booking-form" class="inline-flex items-center gap-2 rounded-full bg-white text-sage-900 px-6 py-3 text-sm font-bold shadow-xl hover:scale-[1.02] transition-transform">
@@ -391,25 +391,25 @@
                     <div class="gradient-border">
                         <div class="soft-cloud-card rounded-[1.6rem] p-6">
                             <p class="text-[10px] uppercase tracking-[0.22em] font-bold text-sage-600">Your estimate</p>
-                            <h2 class="mt-2 text-lg font-serif font-bold text-sage-950">Live Booking Summary</h2>
+                            <h2 class="mt-2 text-lg font-serif font-bold text-sage-950">Quotation Summary</h2>
 
                             <div class="mt-5 rounded-2xl bg-gradient-to-r from-sage-900 via-sage-800 to-sage-700 text-white p-5 shadow-xl">
                                 <p class="text-[10px] uppercase tracking-[0.2em] text-sage-200">Estimated total</p>
-                                <p class="mt-1 text-4xl font-extrabold text-yellow-300" id="summaryTotal">£43</p>
+                                <p class="mt-1 text-4xl font-extrabold text-yellow-300" id="summaryTotal">£285</p>
                                 <div class="mt-3 flex items-center justify-between text-xs">
-                                    <span class="text-sage-200">Duration</span>
+                                    <span class="text-sage-200">Minimum hours</span>
                                     <span class="font-bold" id="summaryHours">3.0 Hours</span>
                                 </div>
                                 <div class="mt-1 flex items-center justify-between text-xs">
-                                    <span class="text-sage-200">Hourly rate</span>
-                                    <span class="font-bold" id="summaryRate">£18/hr</span>
+                                    <span class="text-sage-200">Pricing model</span>
+                                    <span class="font-bold" id="summaryRate">Fixed quotation</span>
                                 </div>
                             </div>
 
                             <ul class="mt-5 space-y-3 text-sm text-sage-800">
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-circle-check text-sage-600 mt-0.5" aria-hidden="true"></i>
-                                    <span><strong id="summaryService">Domestic Clean</strong></span>
+                                    <span><strong id="summaryService">End of Tenancy</strong></span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-circle-check text-sage-600 mt-0.5" aria-hidden="true"></i>
@@ -471,64 +471,65 @@
 
                             <form id="bookingForm" action="https://project--c19784e2-16fd-418c-88b2-7208c206eb3f.lovable.app/api/public/forms/booking" method="POST" class="space-y-5" novalidate>
                                 <input type="hidden" name="source" value="GreenGlo booking page">
-                                <input type="hidden" name="selectedService" id="selectedServiceInput" value="Domestic Clean">
-                                <input type="hidden" name="bookingEstimate" id="bookingEstimateInput" value="£43">
+                                <input type="hidden" name="selectedService" id="selectedServiceInput" value="End of Tenancy">
+                                <input type="hidden" name="bookingEstimate" id="bookingEstimateInput" value="£285">
                                 <input type="hidden" name="propertyType" id="propertyTypeInput" value="Residential">
-                                <input type="hidden" name="serviceType" id="serviceTypeInput" value="Regular Cleaning">
+                                <input type="hidden" name="serviceType" id="serviceTypeInput" value="End of Tenancy">
                                 <input type="hidden" name="accessMethod" id="accessMethodInput" value="Home occupied">
                                 <input type="hidden" name="parkingAvailability" id="parkingAvailabilityInput" value="Free on-site">
                                 <input type="hidden" name="productSource" id="productSourceInput" value="Provider supplies">
                                 <input type="hidden" name="equipmentSource" id="equipmentSourceInput" value="Provider supplies">
+                                <input type="hidden" name="minHours" id="minHoursInput" value="3">
 
                                 <!-- STEP 1 -->
                                 <div class="booking-step" data-step="1">
                                     <div class="grid sm:grid-cols-2 gap-3">
-                                        <button type="button" class="service-option selected p-4 rounded-2xl text-left" data-service="Domestic Clean" data-rate="18">
+                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="Domestic Clean" data-type="fixed" data-base="0">
                                             <div class="flex items-center justify-between">
                                                 <div class="flex items-center gap-3">
                                                     <span class="service-icon text-lg text-sage-600"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
                                                     <div>
                                                         <div class="service-label text-sm font-bold">Domestic Clean</div>
-                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £18/hr</div>
+                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">Quotation based</div>
                                                     </div>
                                                 </div>
                                                 <span class="service-bullet"></span>
                                             </div>
                                         </button>
 
-                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="End of Tenancy" data-rate="25">
+                                        <button type="button" class="service-option selected p-4 rounded-2xl text-left" data-service="End of Tenancy" data-type="fixed" data-base="285">
                                             <div class="flex items-center justify-between">
                                                 <div class="flex items-center gap-3">
                                                     <span class="service-icon text-lg text-sage-600"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
                                                     <div>
                                                         <div class="service-label text-sm font-bold">End of Tenancy</div>
-                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £25/hr</div>
+                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £200</div>
                                                     </div>
                                                 </div>
                                                 <span class="service-bullet"></span>
                                             </div>
                                         </button>
 
-                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="Deep Clean" data-rate="22">
+                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="Deep Clean" data-type="fixed" data-base="180">
                                             <div class="flex items-center justify-between">
                                                 <div class="flex items-center gap-3">
                                                     <span class="service-icon text-lg text-sage-600"><i class="fa-solid fa-sparkles" aria-hidden="true"></i></span>
                                                     <div>
                                                         <div class="service-label text-sm font-bold">Deep Clean</div>
-                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £22/hr</div>
+                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £180</div>
                                                     </div>
                                                 </div>
                                                 <span class="service-bullet"></span>
                                             </div>
                                         </button>
 
-                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="Commercial Clean" data-rate="20">
+                                        <button type="button" class="service-option p-4 rounded-2xl text-left" data-service="Commercial Clean" data-type="fixed" data-base="0">
                                             <div class="flex items-center justify-between">
                                                 <div class="flex items-center gap-3">
                                                     <span class="service-icon text-lg text-sage-600"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
                                                     <div>
                                                         <div class="service-label text-sm font-bold">Commercial Clean</div>
-                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">From £20/hr</div>
+                                                        <div class="service-price text-[10px] uppercase tracking-[0.2em] text-sage-600 font-semibold">Quotation based</div>
                                                     </div>
                                                 </div>
                                                 <span class="service-bullet"></span>
@@ -558,11 +559,11 @@
                                         <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Service Type</label>
                                         <div class="flex flex-wrap gap-2">
                                             <label class="inline-flex items-center gap-2 bg-white/80 border border-sage-200 rounded-xl px-4 py-2.5 text-sm font-medium cursor-pointer has-[:checked]:bg-sage-700 has-[:checked]:text-white has-[:checked]:border-sage-700 transition">
-                                                <input type="radio" name="serviceType" value="Regular Cleaning" class="hidden" checked onchange="document.getElementById('serviceTypeInput').value=this.value">
+                                                <input type="radio" name="serviceType" value="Regular Cleaning" class="hidden" onchange="document.getElementById('serviceTypeInput').value=this.value">
                                                 Regular Cleaning
                                             </label>
                                             <label class="inline-flex items-center gap-2 bg-white/80 border border-sage-200 rounded-xl px-4 py-2.5 text-sm font-medium cursor-pointer has-[:checked]:bg-sage-700 has-[:checked]:text-white has-[:checked]:border-sage-700 transition">
-                                                <input type="radio" name="serviceType" value="End of Tenancy" class="hidden" onchange="document.getElementById('serviceTypeInput').value=this.value">
+                                                <input type="radio" name="serviceType" value="End of Tenancy" class="hidden" checked onchange="document.getElementById('serviceTypeInput').value=this.value">
                                                 End of Tenancy
                                             </label>
                                             <label class="inline-flex items-center gap-2 bg-white/80 border border-sage-200 rounded-xl px-4 py-2.5 text-sm font-medium cursor-pointer has-[:checked]:bg-sage-700 has-[:checked]:text-white has-[:checked]:border-sage-700 transition">
@@ -597,27 +598,66 @@
                                             <input type="email" name="email" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900" placeholder="jane@example.com">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Postcode</label>
-                                            <input type="text" name="postcode" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900" placeholder="SW1A 1AA">
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Address *</label>
+                                            <input type="text" name="address" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900" placeholder="Flat 2, 10 High Street">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Postcode *</label>
+                                            <input type="text" name="postcode" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900" placeholder="SW1A 1AA">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Property Size (Bedrooms) *</label>
+                                            <input type="number" min="0" max="10" name="bedrooms" value="2" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Bathrooms *</label>
+                                            <input type="number" min="1" max="8" name="bathrooms" value="1" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Living Areas *</label>
+                                            <input type="number" min="0" max="6" name="living_areas" value="1" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Kitchens *</label>
+                                            <input type="number" min="0" max="4" name="kitchens" value="1" required class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
                                         </div>
                                     </div>
 
-                                    <div class="mt-4 grid sm:grid-cols-4 gap-4">
+                                    <div class="mt-4 grid sm:grid-cols-2 gap-4">
                                         <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Bedrooms</label>
-                                            <input type="number" min="1" max="12" name="bedrooms" value="2" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Do you have pets?</label>
+                                            <select name="pets" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                                <option value="No pets">No pets</option>
+                                                <option value="Cat(s)">Cat(s)</option>
+                                                <option value="Dog(s)">Dog(s)</option>
+                                                <option value="Other pets">Other pets</option>
+                                            </select>
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Bathrooms</label>
-                                            <input type="number" min="1" max="8" name="bathrooms" value="1" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Any disabilities or access needs?</label>
+                                            <select name="disability" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                                <option value="No specific needs">No specific needs</option>
+                                                <option value="Mobility support required">Mobility support required</option>
+                                                <option value="Sensory sensitivities">Sensory sensitivities</option>
+                                                <option value="Other">Other (please specify in notes)</option>
+                                            </select>
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Living Areas</label>
-                                            <input type="number" min="0" max="6" name="living_areas" value="1" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Parking Availability</label>
+                                            <select name="parking" onchange="document.getElementById('parkingAvailabilityInput').value=this.value" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                                <option value="Free on-site">Free on-site parking</option>
+                                                <option value="Pay & display">Pay &amp; display / permit needed</option>
+                                                <option value="Street parking">Street parking (may be restricted)</option>
+                                                <option value="No parking">No parking available</option>
+                                            </select>
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Kitchens</label>
-                                            <input type="number" min="0" max="4" name="kitchens" value="1" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Cleaner gender preference</label>
+                                            <select name="cleaner_gender" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
+                                                <option value="No preference">No preference</option>
+                                                <option value="Female cleaner">Female cleaner</option>
+                                                <option value="Male cleaner">Male cleaner</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -630,15 +670,6 @@
                                                 <option value="Key pickup from agent">Key pickup from local agent</option>
                                                 <option value="Concierge / building access">Concierge / building access</option>
                                                 <option value="Other">Other (please specify in notes)</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Parking Availability</label>
-                                            <select name="parkingAvailability" onchange="document.getElementById('parkingAvailabilityInput').value=this.value" class="soft-input w-full rounded-xl px-4 py-3 text-sm text-sage-900">
-                                                <option value="Free on-site">Free on-site parking</option>
-                                                <option value="Pay & display">Pay &amp; display / permit needed</option>
-                                                <option value="Street parking">Street parking (may be restricted)</option>
-                                                <option value="No parking">No parking available</option>
                                             </select>
                                         </div>
                                         <div>
@@ -725,8 +756,8 @@
                                     </div>
 
                                     <div class="mt-4">
-                                        <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Project Notes</label>
-                                        <textarea name="notes" rows="4" class="soft-input w-full rounded-2xl px-4 py-3 text-sm text-sage-900" placeholder="Tell us about pets, allergies, access info, fragile items, or property type..."></textarea>
+                                        <label class="block text-[10px] font-bold uppercase tracking-[0.18em] text-sage-700 mb-2">Special Requests / Notes</label>
+                                        <textarea name="notes" rows="4" class="soft-input w-full rounded-2xl px-4 py-3 text-sm text-sage-900" placeholder="Tell us about access info, fragile items, specific areas of concern, or anything else we should know..."></textarea>
                                     </div>
 
                                     <div class="mt-4 space-y-3">
@@ -820,7 +851,7 @@
                         <span class="text-white font-serif font-bold text-base">Green GLO</span>
                     </div>
                     <p class="text-sage-300 leading-relaxed">BICSc accredited residential and commercial cleaning services across London.</p>
-                    <p class="text-sage-400 font-semibold mt-2">Rates from £18/hour.</p>
+                    <p class="text-sage-400 font-semibold mt-2">Quotation based pricing.</p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold text-sm mb-3">Services</h4>
@@ -874,8 +905,8 @@
 
         const bookingState = {
             currentStep: 1,
-            selectedService: 'Domestic Clean',
-            selectedRate: 18,
+            selectedService: 'End of Tenancy',
+            basePrice: 285,
             maxStep: 3
         };
 
@@ -910,24 +941,36 @@
             const bathrooms = Number(document.querySelector('input[name="bathrooms"]')?.value || 1);
             const living = Number(document.querySelector('input[name="living_areas"]')?.value || 1);
             const kitchens = Number(document.querySelector('input[name="kitchens"]')?.value || 1);
-            const rate = bookingState.selectedRate;
-            const freq = document.getElementById('frequencySelect')?.value || 'One-Time Clean';
 
-            let hours = 1.5 + (bedrooms * 0.75) + (bathrooms * 0.5) + (living * 0.25) + (kitchens * 0.25);
-            hours = Math.round(hours * 2) / 2;
-            const subtotal = hours * rate;
+            // Base price comes from the selected service option
+            let basePrice = bookingState.basePrice;
+            // If the selected service is End of Tenancy, use the fixed price map based on bedrooms
+            if (bookingState.selectedService === 'End of Tenancy') {
+                const priceMap = {
+                    0: 200,   // Studio
+                    1: 240,
+                    2: 285,
+                    3: 330,
+                    4: 405,
+                    5: 450    // 5+ bedrooms
+                };
+                const beds = Math.min(bedrooms, 5); // cap at 5 for pricing
+                basePrice = priceMap[beds] || 450;
+            }
+
             const discount = getFreqDiscount();
-            const total = Math.round(subtotal * (1 - discount));
+            const total = Math.round(basePrice * (1 - discount));
 
             document.getElementById('summaryTotal').textContent = `£${total}`;
-            document.getElementById('summaryHours').textContent = `${hours.toFixed(1)} Hours`;
-            document.getElementById('summaryRate').textContent = `£${rate}/hr`;
+            document.getElementById('summaryHours').textContent = `3.0 Hours minimum`;
+            document.getElementById('summaryRate').textContent = `Fixed quotation`;
             document.getElementById('summaryService').textContent = bookingState.selectedService;
             document.getElementById('summaryProperty').textContent = `${bedrooms} bed • ${bathrooms} bath • ${living} living • ${kitchens} kitchen`;
-            document.getElementById('summaryFreq').textContent = freq;
+            document.getElementById('summaryFreq').textContent = document.getElementById('frequencySelect')?.value || 'One-Time Clean';
 
             // Hidden fields
             document.getElementById('bookingEstimateInput').value = `£${total}`;
+            document.getElementById('minHoursInput').value = '3';
         }
 
         // Service selection
@@ -936,7 +979,7 @@
                 document.querySelectorAll('.service-option').forEach(o => o.classList.remove('selected'));
                 button.classList.add('selected');
                 bookingState.selectedService = button.dataset.service;
-                bookingState.selectedRate = Number(button.dataset.rate || 18);
+                bookingState.basePrice = Number(button.dataset.base || 0);
                 document.getElementById('selectedServiceInput').value = bookingState.selectedService;
                 updateSummary();
             });
@@ -1028,10 +1071,12 @@
                     form.reset();
                     showStep(1);
                     document.querySelectorAll('.service-option').forEach(o => o.classList.remove('selected'));
-                    document.querySelector('.service-option')?.classList.add('selected');
-                    bookingState.selectedService = 'Domestic Clean';
-                    bookingState.selectedRate = 18;
-                    document.getElementById('selectedServiceInput').value = 'Domestic Clean';
+                    // Select the default "End of Tenancy" option
+                    const defaultServiceBtn = document.querySelector('.service-option[data-service="End of Tenancy"]');
+                    if (defaultServiceBtn) defaultServiceBtn.classList.add('selected');
+                    bookingState.selectedService = 'End of Tenancy';
+                    bookingState.basePrice = 285;
+                    document.getElementById('selectedServiceInput').value = 'End of Tenancy';
                     updateSummary();
                     setTimeout(() => successMsg.classList.add('hidden'), 8000);
                 } else {
