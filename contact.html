@@ -508,7 +508,7 @@
                                 <div class="rounded-full bg-sage-100 text-sage-700 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] flex-shrink-0">Formspree Ready</div>
                             </div>
 
-                            <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5" novalidate>
+                            <form id="contactForm" action="https://project--c19784e2-16fd-418c-88b2-7208c206eb3f.lovable.app/api/public/forms/contact" method="POST" class="space-y-5" novalidate>
                                 <input type="hidden" name="source" value="GreenGlo contact page">
 
                                 <div class="grid sm:grid-cols-2 gap-4">
@@ -690,7 +690,7 @@
     </div>
 
     <script>
-        const CONTACT_ENDPOINT = 'https://formspree.io/f/your-form-id';
+        const CONTACT_ENDPOINT = 'https://project--c19784e2-16fd-418c-88b2-7208c206eb3f.lovable.app/api/public/forms/contact';
 
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
@@ -743,7 +743,7 @@
             if (hasError) return;
 
             const formData = new FormData(form);
-            const endpoint = form.getAttribute('action');
+            const endpoint = form.getAttribute('action') || CONTACT_ENDPOINT;
 
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Sending…';
