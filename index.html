@@ -975,7 +975,7 @@
                             <div class="booking-step-indicator text-center text-[10px] font-bold rounded-xl py-2 text-sage-600" data-step-indicator="3">3. Schedule</div>
                         </div>
 
-                        <form id="bookingForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5" novalidate>
+                        <form id="bookingForm" action="https://project--c19784e2-16fd-418c-88b2-7208c206eb3f.lovable.app/api/public/forms/booking" method="POST" class="space-y-5" novalidate>
                             <input type="hidden" name="source" value="GreenGlo booking form">
                             <input type="hidden" name="selectedService" id="selectedServiceInput" value="Domestic Clean">
                             <input type="hidden" name="bookingEstimate" id="bookingEstimateInput" value="£43">
@@ -1331,7 +1331,7 @@
     </div>
 
     <script>
-        const FORM_ENDPOINT = 'https://formspree.io/f/your-form-id';
+        const FORM_ENDPOINT = 'https://project--c19784e2-16fd-418c-88b2-7208c206eb3f.lovable.app/api/public/forms/booking';
 
         let heroServiceRate = 18;
         let heroBeds = 2;
@@ -1503,7 +1503,7 @@
             event.preventDefault();
             const form = event.currentTarget;
             const formData = new FormData(form);
-            const endpoint = form.getAttribute('action');
+            const endpoint = form.getAttribute('action') || FORM_ENDPOINT;
 
             if (endpoint.includes('your-form-id')) {
                 document.getElementById('bookingSuccessMsg').classList.remove('hidden');
